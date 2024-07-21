@@ -3,9 +3,9 @@
 {% block content %}
     <h1 class="title">Register a New User</h1>
         
-    <form class="form-with-validation" action="/register/" method="post">
+    <form method="POST" class="form-with-validation" action="/users/register/">
         {% csrf_token %}
         {{ form }}
-        <button>Submit</button>
+        <button class="form-submit">Submit</button>
     </form>
 {% endblock content %} 
