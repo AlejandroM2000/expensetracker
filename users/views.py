@@ -22,7 +22,6 @@ def login(request):
             return redirect()
     else:
         form = AuthenticationForm()
-    return render(request, 'login.html', { "form" : form })
+    return render(request, 'users/login.html', { "form" : form })
 
 
-    return render(request, 'login.html')
