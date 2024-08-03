@@ -5,7 +5,7 @@
     <form class="form-with-validation" action="users/login/" method="post">
         {% csrf_token %}
         {{ form }}
-        <button class="form-submit"> Login </button>
-        <button class="form-submit"> New User </button>
+        <button id="login-btn" class="form-submit"> Login </button>
+        <button id="new-user-button" class="form-submit"> New User </button>
     </form> 
 {% endblock content %} 
